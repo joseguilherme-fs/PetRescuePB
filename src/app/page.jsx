@@ -1,40 +1,15 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Links from './Links'
+import Header from './Header'
 
 export default function Home() {
   return (
     <>
-  <meta charSet="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Pet Rescue Paraíba</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossOrigin="anonymous"
-    referrerPolicy="no-referrer"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap"
-    rel="stylesheet"
-  />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <header>
-    <picture>
-      <source media="(max-width: 415px)" srcSet="img/banner(415).png" />
-      <source media="(max-width: 633px)" srcSet="img/banner(633).png" />
-      <img
-        src="img/banner.gif"
-        style={{ maxWidth: "100%", height: "auto" }}
-        alt="Banner pet rescue"
-      />
-    </picture>
-  </header>
+  <Links />
+
+  <Header />
+
   <div className="posicionamento">
     <section className="navegacao">
       <nav>
@@ -70,6 +45,7 @@ export default function Home() {
       </nav>
     </section>
   </div>
+
   <section id="desaparecidos">
     <div style={{ marginBottom: 30 }}>
       <h1 className="titulo1">
@@ -87,6 +63,7 @@ export default function Home() {
     </div>
     <section className="animais" id="animaisdesap" />
   </section>
+  
   <footer data-aos="fade-up">
     <article>
       <h2 className="titulo2"> Sobre nós </h2>
