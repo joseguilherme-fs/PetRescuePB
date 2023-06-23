@@ -65,8 +65,8 @@ export default function Home() {
     <section className="animais" id="animaisdesap" />
   </section>
     <Footer />
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v15.0" nonce="ptzRCAY8"></script>
+    {/* <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v15.0" nonce="ptzRCAY8"></script> */}
 </>
   )
 }
