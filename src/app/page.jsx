@@ -22,11 +22,11 @@ export default function Home(){
         {statusDesapBody && (<DesapBody
         alternarDesapBody={alternarDesapBody}
         alternarAdoteBody={alternarAdoteBody}
-        />)};
+        />)}
         {statusAdoteBody && (<AdoteBody
         alternarDesapBody={alternarDesapBody}
         alternarAdoteBody={alternarAdoteBody}
-        />)};
+        />)}
     
     </>
   )

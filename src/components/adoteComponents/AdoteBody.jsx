@@ -1,4 +1,3 @@
-'use client'
 import '../../app/globals.css'
 import AnimaisAdote from '@/components/adoteComponents/AnimaisAdote'
 
