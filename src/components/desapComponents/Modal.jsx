@@ -1,6 +1,7 @@
 'use client'
 import modalCSS from '../../css/Modal.module.css'
 import { useState } from "react";
+import API  from '../../lib/api'
 
 const formInicial = {
     nome: '',
@@ -11,8 +12,9 @@ const formInicial = {
 };
 
 const telPattern = /^(\d{2}\s\d\s\d{8}|\d{11}|\d{2}\s\d\s\d{4}-?d{4}|\d{2}\s\d\s?\d{4}-?\d{4})$/
+const textPattern = /^[a-zA-Z]+(\s[a-zA-Z]+)*$/
 
-export default function Modal({alternarStatusModal, salvarCard}){
+export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesaparecidos}){
     const [animal, addAnimal] = useState(formInicial);
 
     const enviarAnuncio = async (event) => {
@@ -21,6 +23,9 @@ export default function Modal({alternarStatusModal, salvarCard}){
         salvarCard(animal);
         
         addAnimal(formInicial);
+
+        const animais = await API.exibirCards('AnimaisDesaparecidos');
+        setAnimaisDesaparecidos(animais);
 
         alternarStatusModal();
     };
@@ -64,7 +69,7 @@ export default function Modal({alternarStatusModal, salvarCard}){
                             name="nometutor"
                             id="nometutor"
                             placeholder="ex: José"
-                            pattern="[a-zA-Z]+"
+                            pattern={textPattern.source}
                             onInvalid={(event) => {
                                 event.target.setCustomValidity("Digite apenas letras.");
                             }}
@@ -121,7 +126,7 @@ export default function Modal({alternarStatusModal, salvarCard}){
                                 onChange={tratarAlterações}
                                 value={animal.nome}
                                 placeholder="ex: 'Aroldo'"
-                                pattern="[a-zA-Z]+"
+                                pattern={textPattern.source}
                                 onInvalid={(event) => {
                                     event.target.setCustomValidity("Digite apenas letras.");
                                 }}
@@ -142,7 +147,7 @@ export default function Modal({alternarStatusModal, salvarCard}){
                                 onChange={tratarAlterações}
                                 value={animal.cidade}
                                 placeholder="ex: 'Cabedelo', 'Sapé'"
-                                pattern="[a-zA-Z]+"
+                                pattern={textPattern.source}
                                 onInvalid={(event) => {
                                     event.target.setCustomValidity("Digite apenas letras.");
                                 }}
@@ -163,7 +168,7 @@ export default function Modal({alternarStatusModal, salvarCard}){
                                 onChange={tratarAlterações}
                                 value={animal.mes}
                                 placeholder="ex: 'junho'"
-                                pattern="[a-zA-Z]+"
+                                pattern={textPattern.source}
                                 onInvalid={(event) => {
                                     event.target.setCustomValidity("Digite apenas letras.");
                                 }}

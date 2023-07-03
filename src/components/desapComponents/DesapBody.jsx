@@ -14,13 +14,14 @@ export default function DesapBody({ alternarDesapBody, alternarAdoteBody }){
     };
 
     // Mostrar animais //
-    const [AnimaisDesaparecidos, mostrarAnimais] = useState([]);
+    const [AnimaisDesaparecidos, setAnimaisDesaparecidos] = useState([]);
     const [erro, exibirErro] = useState(null);
+    
     useEffect(() => {
         async function mostrarCards() {
           try {
             const animais = await API.exibirCards('AnimaisDesaparecidos');
-            mostrarAnimais(animais);
+            setAnimaisDesaparecidos(animais);
           } catch (error) {
             exibirErro("Erro ao carregar os cards: " + error.message);
           }
@@ -40,7 +41,6 @@ export default function DesapBody({ alternarDesapBody, alternarAdoteBody }){
     
             salvarAnimal([...animais, novoAnimal]);
             window.alert("Anúncio salvo com sucesso!");
-            window.location.reload();
         } catch (error) {
             window.alert("Erro ao salvar o animal: " + error.message);
         }
@@ -141,6 +141,8 @@ export default function DesapBody({ alternarDesapBody, alternarAdoteBody }){
             {statusModal && (<Modal
             alternarStatusModal={alternarStatusModal}
             salvarCard={salvarCard}
+            AnimaisDesaparecidos = {AnimaisDesaparecidos}
+            setAnimaisDesaparecidos={setAnimaisDesaparecidos}
             />)};
 
             <footer>
