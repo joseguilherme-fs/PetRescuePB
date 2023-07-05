@@ -121,7 +121,7 @@ export default function AdoteBody({ alternarDesapBody, alternarAdoteBody }){
                     <div className="final">
                     <p style={{ fontWeight: "bold", fontSize: 10 }}>
                         Projeto feito para a disciplina de Linguagem de Script | TSI - IFPB
-                        2023.1 | feito por Nirielly Brito, José Guilherme e Sofia Leal.
+                        2023.1 | feito por Nirielly Brito, José Guilherme, Sofia Leal e Wilton Padilha.
                     </p>
                     </div>
                 </section>

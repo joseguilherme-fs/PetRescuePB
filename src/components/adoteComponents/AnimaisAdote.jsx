@@ -151,20 +151,17 @@ export default function AnimaisAdote() {
                     <button>detalhes</button>
                 </div>
                 </div>
-                <div
-                className="fb-share-button"
-                data-href="https://pet-rescue.projetolm22.repl.co/"
-                data-layout="button"
-                data-size="small"
-                >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
-                </div>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
             </article>
 
             <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
