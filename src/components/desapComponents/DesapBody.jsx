@@ -144,8 +144,7 @@ export default function DesapBody({ alternarDesapBody, alternarAdoteBody }){
             AnimaisDesaparecidos = {AnimaisDesaparecidos}
             setAnimaisDesaparecidos={setAnimaisDesaparecidos}
             />)};
-
-            <footer>
+            <footer data-aos="fade-up">
                 <article>
                 <h2 className="titulo2"> Sobre nós </h2>
                 <p className="descriçao">

@@ -95,7 +95,7 @@ export default function AdoteBody({ alternarDesapBody, alternarAdoteBody }){
                 <AnimaisAdote />
             </section>
 
-            <footer>
+            <footer data-aos="fade-up">
                 <article>
                     <h2 className="titulo2"> Sobre nós </h2>
                     <p className="descriçao">

@@ -1,7 +1,7 @@
 export default function AnimaisAdote() {
     return(
         <>
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto goldem">
                 <img src="https://i.imgur.com/hpqmGaj.jpg" height="250px" width="250px" />
@@ -20,17 +20,21 @@ export default function AnimaisAdote() {
                 data-layout="button"
                 data-size="small"
                 >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
                 </div>
             </article>
 
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto pretinha">
                 <img src="https://i.imgur.com/02p4mml.jpg" height="250px" width="250px" />
@@ -43,23 +47,20 @@ export default function AnimaisAdote() {
                     <button>detalhes</button>
                 </div>
                 </div>
-                <div
-                className="fb-share-button"
-                data-href="https://pet-rescue.projetolm22.repl.co/"
-                data-layout="button"
-                data-size="small"
-                >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
-                </div>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
             </article>
 
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto gatoadota">
                 <img src="https://i.imgur.com/QGhrPbM.jpg" height="250px" width="250px" />
@@ -72,23 +73,20 @@ export default function AnimaisAdote() {
                     <button>detalhes</button>
                 </div>
                 </div>
-                <div
-                className="fb-share-button"
-                data-href="https://pet-rescue.projetolm22.repl.co/"
-                data-layout="button"
-                data-size="small"
-                >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
-                </div>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
             </article>
 
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto gatos">
                 <img src="https://i.imgur.com/kkfjJY9.jpg" height="250px" width="250px" />
@@ -101,23 +99,20 @@ export default function AnimaisAdote() {
                     <button>detalhes</button>
                 </div>
                 </div>
-                <div
-                className="fb-share-button"
-                data-href="https://pet-rescue.projetolm22.repl.co/"
-                data-layout="button"
-                data-size="small"
-                >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
-                </div>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
             </article>
 
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto pantera">
                 <img src="https://i.imgur.com/vYR4UtB.jpg" height="250px" width="250px" />
@@ -130,23 +125,20 @@ export default function AnimaisAdote() {
                     <button>detalhes</button>
                 </div>
                 </div>
-                <div
-                className="fb-share-button"
-                data-href="https://pet-rescue.projetolm22.repl.co/"
-                data-layout="button"
-                data-size="small"
-                >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
-                </div>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
             </article>
 
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto cachorro">
                 <img src="https://i.imgur.com/PQTXQ5p.jpg" height="250px" width="250px" />
@@ -175,7 +167,7 @@ export default function AnimaisAdote() {
                 </div>
             </article>
 
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto zorro">
                 <img src="https://i.imgur.com/PnGzt04.jpg" height="250px" width="250px" />
@@ -188,23 +180,20 @@ export default function AnimaisAdote() {
                     <button>detalhes</button>
                 </div>
                 </div>
-                <div
-                className="fb-share-button"
-                data-href="https://pet-rescue.projetolm22.repl.co/"
-                data-layout="button"
-                data-size="small"
-                >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
-                </div>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
             </article>
 
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto periquito">
                 <img src="https://i.imgur.com/wMrzZa1.jpg" height="250px" width="250px" />
@@ -217,23 +206,20 @@ export default function AnimaisAdote() {
                     <button>detalhes</button>
                 </div>
                 </div>
-                <div
-                className="fb-share-button"
-                data-href="https://pet-rescue.projetolm22.repl.co/"
-                data-layout="button"
-                data-size="small"
-                >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
-                </div>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
             </article>
 
-            <article className="card p2">
+            <article data-aos="zoom-in" data-aos-duration="1250" className="card p2">
                 <div className="status">ADOTE</div>
                 <div className="foto michellangelo">
                 <img src="https://i.imgur.com/OLgiujX.jpg" height="250px" width="250px" />
@@ -246,20 +232,17 @@ export default function AnimaisAdote() {
                     <button>detalhes</button>
                 </div>
                 </div>
-                <div
-                className="fb-share-button"
-                data-href="https://pet-rescue.projetolm22.repl.co/"
-                data-layout="button"
-                data-size="small"
-                >
-                <a
-                    target="_blank"
-                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&src=sdkpreparse"
-                    className="fb-xfbml-parse-ignore"
-                >
-                    Compartilhar
-                </a>
-                </div>
+                <button
+                    className="share-button"
+                    onClick={() =>
+                        window.open(
+                        'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+                        '_blank'
+                        )
+                    }
+                    >
+                    <i className="fa-brands fa-facebook" />  Compartilhar 
+                </button>
             </article>
         </>
     )

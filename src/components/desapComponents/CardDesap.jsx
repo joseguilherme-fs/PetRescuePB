@@ -1,7 +1,8 @@
+import AOSFunction from '@/components/AOSFunction'
 export default function CardDesap( {AnimaisDesaparecidos} ) { 
     return (
 <>
-<article id={AnimaisDesaparecidos.id} className="card" style={{ display: "block" }}>
+<article id={AnimaisDesaparecidos.id} data-aos="zoom-in" data-aos-duration="1250" className="card" style={{ display: "block" }}>
   <div className="status">DESAPARECIDO</div>
   <div>
     <img src={AnimaisDesaparecidos.img} height="250px" width="250px" />
@@ -19,21 +20,21 @@ export default function CardDesap( {AnimaisDesaparecidos} ) {
       </a>
     </div>
   </div>
-  <div
-    className="fb-share-button"
-    data-href="https://pet-rescue.projetols.repl.co//"
-    data-layout="button"
-    data-size="small"
-  >
-    <a
-      target="_blank"
-      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse"
-      className="fb-xfbml-parse-ignore"
-    >
-      Compartilhar
-    </a>
-  </div>
+  <button
+  className="share-button"
+  onClick={() =>
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetols.repl.co%2F&src=sdkpreparse',
+      '_blank'
+    )
+  }
+>
+<i className="fa-brands fa-facebook" />  Compartilhar 
+</button>
+
+
 </article>
+<AOSFunction/>
 </>
             
     )

@@ -62,7 +62,7 @@ export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesapa
                         <div className="reg-tutor">
                         <h2>Tutor</h2>
                         <div className={modalCSS['form-tutor']}>
-                            <label htmlFor="nometutor">Nome:</label>
+                            <label htmlFor="nometutor">Nome: </label>
                             <input
                             type="text"
                             size={30}
@@ -80,7 +80,7 @@ export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesapa
                             />
                         </div>
                         <div className={modalCSS['form-tutor']}>
-                            <label htmlFor="emailtutor">E-mail:</label>
+                            <label htmlFor="emailtutor">E-mail: </label>
                             <input
                             type="email"
                             size={30}
@@ -91,7 +91,7 @@ export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesapa
                             />
                         </div>
                         <div className={modalCSS['form-tutor']}>
-                            <label htmlFor="teltutor">Número para contato:</label>
+                            <label htmlFor="teltutor">Número para contato: </label>
                             <input
                             type="tel"
                             name="teltutor"
@@ -117,8 +117,7 @@ export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesapa
                         <div className="reg-pet desaparecido">
                             <div className={modalCSS['form-pet']}>
                             <label htmlFor="nome" className="pb-2">
-                                Nome:
-                            </label>
+                                Nome: </label>
                             <input
                                 type="text"
                                 name="nome"
@@ -138,8 +137,7 @@ export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesapa
                             </div>
                             <div className={modalCSS['form-pet']}>
                             <label htmlFor="cidade" className="pb-2">
-                                Cidade em que desapareceu:
-                            </label>
+                                Cidade em que desapareceu: </label>
                             <input
                                 type="text"
                                 name="cidade"
@@ -159,8 +157,7 @@ export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesapa
                             </div>
                             <div className={modalCSS['form-pet']}>
                             <label htmlFor="mes" className="pb-2">
-                                Mês do desaparecimento:
-                            </label>
+                                Mês do desaparecimento: </label>
                             <input
                                 type="text"
                                 name="mes"
@@ -180,8 +177,7 @@ export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesapa
                             </div>
                             <div className={modalCSS['form-pet']}>
                             <label htmlFor="ano" className="pb-2">
-                                Ano do desaparecimento:
-                            </label>
+                                Ano do desaparecimento: </label>
                             <input
                                 type="text"
                                 name="ano"
@@ -200,14 +196,14 @@ export default function Modal({alternarStatusModal, salvarCard, setAnimaisDesapa
                             />
                             </div>
                             <div className={modalCSS['form-pet']}>
-                            <label htmlFor="img">Foto do animal:</label>
+                            <label htmlFor="img">Foto do animal: </label>
                             <input
                                 type="text"
                                 name="img"
                                 id="img"
                                 onChange={tratarAlterações}
                                 value={animal.img}
-                                placeholder="ex: './img/nomepet.jpeg'"
+                                placeholder="ex: i.imgur.com/****"
                                 required
                             />
                             </div>
